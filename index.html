@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/To-Do-web.css" />
+    <title>To-Do List Web App</title>
+  </head>
+  <body>
+    <h2>To-Do List Web App</h2>
+
+    <div class="container">
+      <!-- Input Form -->
+      <form id="todo-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required />
+        <div id="title-error" class="error"></div>
+
+        <label for="description">Description:</label>
+        <textarea id="description" rows="4" required></textarea>
+        <div id="description-error" class="error"></div>
+
+        <button type="submit">Save</button>
+      </form>
+
+      <!-- Display Todo Cards -->
+      <div class="todo-section">
+        <div class="todo-header">
+          <span>Title</span>
+          <span>Description</span>
+          <span>Delete</span>
+        </div>
+        <div class="todo-list" id="todo-list-body"></div>
+      </div>
+    </div>
+
+    <script src="../js/To_Do_Task.js"></script>
+  </body>
+</html>
